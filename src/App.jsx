@@ -1,7 +1,5 @@
-import './App.css';
-
 function App() {
-  return <div>CV-Application</div>;
+  return <div className='text-5xl text-center'>CV-Application</div>;
 }
 
 export default App;
