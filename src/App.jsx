@@ -1,7 +1,7 @@
-import Education from './components/Education';
-import Experience from './components/Experience';
-import General from './components/General';
-import Header from './components/Header';
+import Education from './Education';
+import Experience from './Experience';
+import General from './General';
+import Header from './Header';
 
 export default function App() {
   return (
