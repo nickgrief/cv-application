@@ -4,9 +4,8 @@ import Header from './Header';
 
 export default function App() {
   return (
-    <div className='flex flex-col m-4 text-center'>
+    <form className='flex flex-col m-4 text-center'>
       <Header />
-      <InputList />
       <Section
         name={'General'}
         inputs={[
@@ -52,7 +51,10 @@ export default function App() {
             type: 'text',
             id: 'position title',
           },
-          // TODO: List of tasks
+          {
+            type: 'text',
+            id: 'tasks you did',
+          },
           {
             type: 'date',
             id: 'date of starting at that job',
@@ -63,6 +65,9 @@ export default function App() {
           },
         ]}
       />
-    </div>
+      <button className='bg-red-300 rounded-xl p-2' type='submit'>
+        Submit
+      </button>
+    </form>
   );
 }
